@@ -1,0 +1,355 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 {
+    text-align: center;
+    color: #3D4752;
+    margin: 0px 0px 10px 0px;
+}
+
+.main {
+    background-color: white;
+    padding: 10px 20px 10px 10px;
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+.container {
+    position: relative;
+    display: grid;
+    width: 52%;
+    height: 500px;
+    background-color: #3D4752;
+    padding-left: 10px;
+    padding-right: 20px;
+    border: 4 px solid red;
+}
+
+.block {
+    display: grid;
+    flex-flow: row wrap;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    border: 1px solid red;
+    grid-auto-flow: column;
+    margin: 30px 70px 30px 5px;
+    background-color: #46525F;
+    border: 2px solid grey;
+    width: 84%;
+    font-weight: 540;
+    font-size: 18px;
+}
+
+.typeface {
+    grid-row: 1/2;
+    margin: 40px 0px 0px 20px;
+    color: #C7CACC;
+    border: 0px solid grey;
+}
+
+.text-typeface {
+    margin-bottom: 10px;
+    width: 200px;
+    height: 30px;
+}
+
+.dropdown-typeface select {
+    background-color: #2E3740;
+    color: grey;
+    width: 200px;
+    height: 28px;
+    display: block;
+    font-size: 13px;
+    font-weight: 540;
+}
+
+  .dropdown-typeface select:focus {
+    border-color: #2c6ed8;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px 1px #2c6ed8;
+}
+
+.weight {
+    grid-row: 2/2;
+    margin: 40px 0px 0px 20px;
+    color: #C7CACC;
+    border: 0px solid grey;
+}
+
+.text-weight {
+    padding-bottom: 16px;
+}
+
+.weight .checkbox-weight input {
+    float: left;
+    opacity: 0;
+    height: 18px;
+    width: 18px;
+    margin-left: 0px;
+    background-color: #303A43;
+    border: grey;
+}
+
+#regular {
+    display: inline-block;
+    position: absolute;
+    float: left;
+    left: 36px;
+    width: 30px;
+    height: 30px;
+}
+
+#regular input::before {
+    
+    color: cyan;
+}
+
+#regular label::before {
+    content: " \2713";
+    color: darkgrey;
+}
+
+.checkbox-weight p {
+    position: absolute;
+    left: 80px;
+    top: 246px;
+}
+
+p span {
+    position: absolute;
+    left: 120px;
+    top: 0px;    
+}
+
+#bold {
+    display: inline-block;
+    position: absolute;
+    float: left;
+    left: 160px;
+    width: 30px;
+    height: 30px;
+}
+
+.cb-label {
+    display: inline-block;
+    float: left;
+    width: 30px;
+    height: 30px;
+}
+
+.weight .checkbox-weight input:checked ~ label {
+    background-color: #37BBA4;
+    color: white;
+  }
+
+.weight .checkbox-weight input:checked ~ label::after {
+    content: "  \2713";
+    white-space: pre;
+  }
+
+.weight .cb-label {
+    background-color: #303A43;
+    border: 2px solid grey;
+    width: 18px;
+    height: 18px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.range {
+    grid-row: 3/4;
+    margin: 0px 0px 0px 20px;
+    color: #C7CACC;
+    border: 0px solid grey;
+}
+
+.range input[type=range]::-webkit-slider-runnable-track {
+    height: 2.4px;
+    cursor: pointer;
+    border: 1px solid #303A43;
+}
+
+.letter-range-left {
+    float: left;
+    padding-top: 10px;
+}
+
+.letter-range-right {
+    float: right;
+    padding-top: 10px;
+    padding-right: 130px;
+    font-size: 24px;
+    color: white;
+}
+
+.toggle-ui input {
+    appearance: none;
+    outline: none;
+    height: 30px;
+    width: 55px;
+    border-radius: 16px;
+    position: absolute;
+    background-color: #2e3740;
+    right: 160px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+  .toggle-ui input:after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #60bba6;
+    transition: all 0.2s ease;
+  }
+  .toggle-ui input:checked {
+    background-color: #4696ed;
+  }
+  .toggle-ui input:checked::after {
+    transform: translatex(24px);
+  }
+  
+  .toggle-ui label {
+    top: 8px;
+    position: absolute;
+    right: 360px;
+    top: 110px;
+  }
+
+  .toggle-ui {
+    grid-column: 2/3;
+    margin: 68px 0px 0px 0px;
+    color: #C7CACC;
+    border: 0px solid grey;
+}
+
+.color {
+    margin-top: 40px;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    color: #C7CACC;
+    border: 0px solid grey;
+}
+
+.text-color {
+    margin-bottom: 10px;
+}
+
+/* Скрываем чекбоксы и делаем из них круглую кнопку */
+.color input[type="checkbox"]:checked, 
+.color input[type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+.color input[type="checkbox"]:checked + label, 
+.color input[type="checkbox"]:not(:checked) + label {
+    display: inline-block;
+    position: relative;
+    padding-left: 28px;
+    line-height: 20px;
+    cursor: pointer;
+    margin-right: 24px;
+}
+
+.color input[type="checkbox"]:checked + label:before, 
+.color input[type="checkbox"]:not(:checked) + label:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: 1px solid grey;
+    background-color: #ffffff;
+}
+
+.color input[type="checkbox"]:checked + label:before, 
+.color input[type="checkbox"]:not(:checked) + label:before {
+    background-color: #3C75BE;
+}
+
+
+
+/* окончание скрытия чекбоксов */
+
+/* Теперь добавим индикаторы выбора. Добавляем галочку */
+.color input[type="checkbox"]:checked + label:after, 
+.color input[type="checkbox"]:not(:checked) + label:after {
+    content: "";
+    position: absolute;
+}
+
+.color input[type="checkbox"]:checked + label:after, 
+.color input[type="checkbox"]:not(:checked) + label:after {
+    content: "  \2713";
+    left: 7px;
+    top: 4px;
+    color: white;
+}
+
+.checkbox-color input[type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+}
+
+.checkbox-color input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+}
+/* Чекбоксы с галочкой внутри готовы */
+
+#blue::before {
+    background: #3E73C0;
+}
+
+#cyan::before {
+    background: cyan;
+}
+
+#pink::before {
+    background: #DD57D0;
+}
+
+#yellow::before {
+    background: #DCD951;
+}
+
+#orange::before {
+    background: #DE7C58;
+}
+
+.right-side-menu {
+    position: absolute;
+    display: inline-block;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    width: auto;
+    height: auto;
+    left: 83.2%;
+    top: 14%;
+    margin-left: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #303A42;
+}
+
+img {
+    margin-top: 20px;
+    display: block;
+    padding-left: 20px;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+}

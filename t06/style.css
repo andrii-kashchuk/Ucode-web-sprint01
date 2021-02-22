@@ -1,0 +1,162 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  transition: all 0.2s ease;
+}
+
+h1 {
+    color: #F76B88;
+    text-align: left;
+}
+
+.center {
+    color: #808080;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+/* body {
+  font-family: "Source Sans Pro", sans-serif;
+  transition: all 0.2s ease;
+} */
+
+.container-1, .container-2, .container-3 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .cb-label {
+    border: 1px solid #868686;
+    padding: 15px 40px;
+    margin: 0px 5px 0px 0px;
+    border-radius: 30px;
+    color: #868686;
+    cursor: pointer;
+  }
+
+  li {
+    list-style: none;
+    display: inline;
+  }
+
+/* delete an checkbox' box */
+  input[type="checkbox"] {
+    opacity: 0;
+    height: 0;
+    width: 0;
+  }
+
+  ul {
+    padding: 0px;
+    margin-bottom: 40px;
+  }
+
+  input:checked ~ label {
+    background-color: #19254e;
+    color: white;
+  }
+
+  /* adding the check image with white-space Property */
+  input:checked ~ label::after {
+    content: "   \2713";
+    white-space: pre;
+  }
+
+  .container-4 {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+
+  .job-details-label {
+    color: #868686;
+    padding: 5px 15px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .job-details {
+    width: 100%;
+    border: 0px solid black;
+    font-size: 16px;
+    font-family: Source Sans Pro;
+    padding-left: 20px;
+  }
+
+  input[type="text"]:focus {
+    outline: none;
+  }
+
+  .container-5 {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .input-left {
+    width: 100%;
+    max-width: 96%;
+    border: 0px solid black;
+    font-size: 16px;
+    font-family: Source Sans Pro;
+    padding-left: 20px;
+  }
+
+  .input-right {
+    width: 100%;
+    max-width: 96%;
+    border: 0px solid black;
+    font-size: 16px;
+    font-family: Source Sans Pro;
+    padding-left: 20px;
+  }
+
+.label-left {
+  width: 100%;
+}
+
+.div {
+  display: inline-block;
+  border-bottom: 1px solid lightgray;
+  width: 48%;
+  margin-bottom: 20px;
+}
+
+.div-1 {
+  display: inline-block;
+  border-bottom: 1px solid lightgray;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+  .input-left {
+    width: 100%;
+    font-size: 16px;
+    font-family: Source Sans Pro;
+    padding-left: 20px;
+  }
+
+  .label-right {
+    width: 100%;
+
+  }
+
+  .button {
+    display: flex;
+    padding: 10px;
+  }
+
+  #send {
+    /* adding the height for the button */
+    padding: 20px;
+    width: 100%;
+    background-color: #e7748a;
+    border: none;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  #send:hover {
+    background-color: #FF00AE;
+    transition: all 1.5s ease;
+  }

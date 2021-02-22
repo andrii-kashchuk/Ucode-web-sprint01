@@ -1,0 +1,17 @@
+img {
+    width: 200px;
+    height: 127px;
+    float: left;
+    margin: 0px 10px 10px 0px;
+}
+
+@media print  {
+body {
+    display: flex;
+    flex-direction: column;
+}
+img {
+    width: 200px;
+    height: 127px;
+}
+    }

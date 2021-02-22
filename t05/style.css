@@ -1,0 +1,39 @@
+body {
+    width: auto;
+}
+
+div {
+    width: 0px auto;
+}
+
+input {
+    border: 1px solid #F1F2F1
+    border-radius: 4px;
+    color: green;
+    line-height: 2em;
+    width: 90%;
+    display: inline-flex;
+}
+
+.search:active {
+    color: green;
+    border: 1px solid #F1F2F1;
+}
+
+.search:hover {
+    border: 1px solid blue;
+    color: green;
+}
+
+button {
+    color: grey;
+    line-height: 1.5em;
+    width: 7%;
+    display: inline-flex;
+    background-color: #EFEFEF;
+    border: 1px solid #EFEFEF;
+}
+
+button:hover, .search:hover {
+    color: red;
+}
