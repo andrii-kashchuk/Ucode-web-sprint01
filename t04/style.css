@@ -1,24 +1,65 @@
-h2 {
-    /* width: 290px; */
-    width: auto;
-    height: auto;
-    display: block;
-    text-align: center;
-    margin: 15px 15px;
+* { /* * is pointing to everything */
+    box-sizing: border-box;
+    /* transition: all 1.0s; blocks will appear slowly in 1,0 sec if it needed */
+  }
 
+h1 {
+  text-align: center;
 }
 
-div {
-    width: 270px;
-    border: 1px grey solid;
-    height: 160px;
+h2 {
+    justify-content: left;
+    font-size: 32px;
+  }
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+p {
+    margin: 10px;
+  }
+
+.block {
+    border: 1px solid lightgray;
     display: inline-block;
-    vertical-align: top;
-    padding: 10px;
-    justify-content: space-between;
-    margin: 15px 15px;
+    margin: 20px 10px;
+    padding: 10px 10px;
+  }
+ 
+div.block h1.title {
+  justify-content: left;
+  text-align: left;
+}
+
+input {
+  display: block;
+  width: 98%;
 }
 
 input::placeholder {
     color: blue;
 }
+
+
+/* media settings */
+
+@media (min-width: 320px) {
+    .block {
+      width: calc(100% - 20px);
+    }
+  }
+
+@media (min-width: 768px) {
+    .block {
+      width: calc(50% - 20px);
+    }
+  }
+
+@media (min-width: 1024px) {
+    .block {
+      width: calc(25% - 20px);
+    }
+  }

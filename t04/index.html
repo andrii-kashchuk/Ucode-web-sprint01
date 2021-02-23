@@ -1,57 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-    <head>
-        <meta charset="UTF-8">
-        <title>Handbook</title>
-        <meta name="description" content="t04. Handbook">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    
-    <body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Viewport - это видимая пользователю область веб-страницы, то, что может увидеть пользователь, не прибегая к прокрутке. initial-scale – начальный масштаб страницы. Значением атрибута является вещественное число от 0.1 до 1.0. Значение 1.0 определяет масштаб 1:1, т.е. «не масштабировать». -->
+    <title>Handbook</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
 
-        <h2>HTML</h2>
-        <h2>BLOCK ELEMENTS</h2>
-
-        <div class="left">
-            <p> div<br>
-                defines a division or a section in an<br>
-                HTML document<br>
+    <h1 id="html">HTML</h1>
+    <h1>BLOCK ELEMENTS</h1>
+    
+    <div class="container">
+      
+        <div class="block">
+            <p>div<br>
+                <br>
+                defines a division or a section in an HTML document<br>
                 align, title<br>
-                &lt;div&gt;...&lt;/div&gt;<br><br>
-                <input class="border" placeholder="Lorem ipsum."></input>
+                <br>
+                &lt;div&gt;...&lt;/div&gt;
             </p>
+            <input class="border" placeholder="Lorem ipsum."></input>
         </div>
-        
-        <div class="left-center">
+
+        <div class="block">
             <p>h1<br>
-                The h1 to h6 are used to define<br>
-                HTML headings<br>
-                align<br>
-                &lt;h1&gt;Title&lt;/h1&gt;
-                <h1>Title</h1>
+              <br>
+              The h1 to h6 tags are used to define HTML headings <br>
+              align<br>
+              <br>
+              &lt;h1&gt;Title&lt;/h1&gt;
+            </p>
+            <h2><span class="title">Title</span></h2>
+        </div>
+
+        <div class="block">
+            <p>footer<br>
+              <br>
+              Specifies the trailing are (footer) of a document or section.<br>
+              ... <br>
+              &lt;footer&gt;content&lt;/footer&gt;
             </p>
         </div>
 
-        <div class="center-right">
-            <p>
-                footer<br>
-                Specifies the trailing area (footer) of a<br>
-                document or section.<br>
-                ...<br>
-                &lt;footer&gt;content&lt;/footer&gt;
+        <div class="block">
+            <p>main<br>
+              <br />
+              Specifies the main content of<br>
+              a document <br>
+              ...<br>
+              &lt;main&gt;&lt;/main&gt;
             </p>
         </div>
 
-        <div class="right">
-            <p>
-                main<br>
-                specifies the main content of<br>
-                a document<br>
-                ...<br>
-                &lt;main&gt;&lt;/main&gt;<br>
-            </p>
-        </div>
-
-    </body>
+      </div>
+  </body>
 </html>

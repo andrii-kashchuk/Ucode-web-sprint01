@@ -3,15 +3,16 @@
     height: 50px;
     border-radius: 50%;
     background-color: green;
-    margin-top: 20%;
-    animation-duration: 4s;
+  
+    animation-duration: 3s; /* Определяет время, в течение которого должен пройти один цикл анимации */
     animation-name: box;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    transition: all linear 4s;
+    animation-iteration-count: infinite; /* Определяет количество повторений анимации; Вы можете использовать значение infinite для бесконечного повторения анимации. */
+    animation-direction: alternate; /* Дает возможность при каждом повторе анимации идти по альтернативному пути, либо сбросить все значения и повторить анимацию. */
+    transition: all linear 2s;
 }
 
-@keyframes box {
+/* настраиваем кадры анимации */
+@keyframes box { 
 	from {
         margin-left: calc(100% - 3%);
       }

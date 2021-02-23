@@ -1,4 +1,4 @@
-body {
+/* body {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -7,20 +7,28 @@ body {
     line-height: 1.6;
     color: black;
     /* background-color: black; */
+    /* caret-color: transparent;
+  } */ */
+
+.container {
+    display: flex;
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
     caret-color: transparent;
-  }
+}
 
                                                                   /* start of header */
 .header {
-    border: 1px solid black;
-    width: 100%;
-    display: block;
+    border: 0px solid black;
+    display: flex;
     background-color: brown;
     color: white;
+    justify-content: space-between;
 }
 
 .logo, .h-menu, .h-search, .h-phone {
-    display: inline-block;
+    display: flex;
     border: 0px solid grey;
 }
 
@@ -38,17 +46,13 @@ body {
     padding-left: 20px;
 }
 
-.h-menu {
-    border: 0px solid black;
-    width: 30%;
-    justify-items:flex-end;
-    text-align: justify;
-}
-
 .h-menu a {
     padding-right: 50px;
+    padding-left: 10px;
     text-decoration: none;
     color: white;
+    justify-content: center;
+    padding-top: 16px;
 }
 
 .h-search {
@@ -56,7 +60,7 @@ body {
 }
 
 .h-search input {
-    display: block;
+    display: flex;
     width: 25%;
     min-width: 100px;
     padding-left: 60px;
@@ -67,7 +71,7 @@ body {
 }
 
 .h-search label {
-    display: block;
+    display: flex;
     width: 25%;
     min-width: 200px;
     border: 0px solid transparent;
@@ -83,11 +87,8 @@ body {
     color: transparent; 
   }
 
-.h-phone {
-    width: 23%;
-}
-
 .h-phone p {
+    display: flex;
     padding-right: 20px;
 }
 
@@ -117,7 +118,7 @@ div nav span a {
 }
 
 .nav-name, .chbx-name {
-    display: block;
+    display: flex;
     border: 0px solid black;
     padding-left: 20px;
 }
@@ -210,7 +211,7 @@ input:checked ~ label::after {
 }
 
 .grid-item-img1 {
-    display: block;
+    display: flex;
     background-image: url(assets/images/car-1.jpg);
     width: 280px;
     height: 175px;
@@ -219,7 +220,7 @@ input:checked ~ label::after {
 }
 
 .grid-item-img2 {
-    display: block;
+    display: flex;
     background-image: url(assets/images/car-2.jpg);
     width: 280px;
     height: 175px;
@@ -228,7 +229,7 @@ input:checked ~ label::after {
 }
 
 .grid-item-img3 {
-    display: block;
+    display: flex;
     background-image: url(assets/images/car-3.jpg);
     width: 280px;
     height: 175px;
@@ -237,7 +238,7 @@ input:checked ~ label::after {
 }
 
 .grid-item-img4 {
-    display: block;
+    display: flex;
     background-image: url(assets/images/car-4.jpg);
     width: 280px;
     height: 175px;
@@ -272,7 +273,7 @@ input:checked ~ label::after {
     color: red;   
 }
 
-.grid-item button {
+.grid-item button, .container-card button {
     width:  100%;
     background-color: brown;
     color: white;
@@ -295,4 +296,45 @@ h2 a {
     text-transform: none;
     padding-left: 0px;
     
+}
+
+.nav {
+    background-color: lightgrey;
+    height: 1.6em;
+}
+
+/* card css */
+.container-card {   
+    display: flex;
+    width: 98%;
+    height: 80%;
+    justify-items: center;
+    justify-content: space-around;
+}
+
+.card-left, .card-right {
+    width: 45%;
+    height: auto;
+    border: 0px solid red;
+    margin-top: 20px;
+}
+
+.card {
+    display: flex;
+}
+
+.cardImg {
+    border: 0px solid black;
+    border-radius: 10px;
+    width: 86%;
+    height: 86%;
+}
+
+.footer {
+    border: 0px solid black;
+    display: flex;
+    background-color: brown;
+    color: white;
+    justify-content: space-between;
+    margin-top: 30px;
 }

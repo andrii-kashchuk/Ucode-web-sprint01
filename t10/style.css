@@ -21,7 +21,7 @@ h1 {
 
 .container {
     position: relative;
-    display: grid;
+    display: flex;
     width: 52%;
     height: 500px;
     background-color: #3D4752;

@@ -1,39 +1,30 @@
-body {
-    width: auto;
-}
-
 div {
-    width: 0px auto;
+    display: flex;
+    width: 100%;
 }
 
 input {
-    border: 1px solid #F1F2F1
+    border: 1px solid #F1F2F1;
     border-radius: 4px;
     color: green;
     line-height: 2em;
-    width: 90%;
-    display: inline-flex;
-}
-
-.search:active {
-    color: green;
-    border: 1px solid #F1F2F1;
-}
-
-.search:hover {
-    border: 1px solid blue;
-    color: green;
+    width: 96%;
 }
 
 button {
     color: grey;
     line-height: 1.5em;
-    width: 7%;
-    display: inline-flex;
     background-color: #EFEFEF;
     border: 1px solid #EFEFEF;
+    border-radius: 4px;
 }
 
-button:hover, .search:hover {
+button:hover, .search:hover, input:hover {
     color: red;
+}
+
+.search:active {
+    color: green;
+    border: 1px solid #F1F2F1;
+    border-radius: 4px;
 }
